@@ -14,6 +14,8 @@ void calibration() {
   c0->cd(); g0->Draw("AP");
 
   g0->Fit("pol1");
+  g0->GetXaxis()->SetTitle("Tensione multimetro (V)");
+  g0->GetYaxis()->SetTitle("Tensione oscilloscopio (V)");
   gStyle->SetOptFit(1111);
 }
 
