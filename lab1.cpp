@@ -58,8 +58,8 @@ void germanio() {
 
   TF1* f2 = new TF1("f2", "[0]*(exp(x/[1])-1.)", 50, 330);
 
-  f2->SetParameter(0, 1e-6);
-  f2->SetParameter(1, 50.0);
+  f2->SetParameter(0, 1e-3);
+  f2->SetParameter(1, 35.0);
   f2->SetParName(0, "I0");
   f2->SetParName(1, "Eta*VT");
 
