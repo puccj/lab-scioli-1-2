@@ -64,8 +64,8 @@ void fit() {
   f200->SetLineColor(kRed);
   f100->SetLineColor(kBlue);
 
-  g200->Fit(f200,"","", 1.5, 5);
-  g100->Fit(f100,"","", 1.5, 5);
+  g200->Fit(f200,"","", 1.5, 4);
+  g100->Fit(f100,"","", 1.5, 4);
   gStyle->SetOptFit(1111); 
 
   /*
